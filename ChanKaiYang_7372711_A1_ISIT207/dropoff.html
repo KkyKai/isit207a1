@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DropOff Location</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+      html {
+          height: 100%;
+      }
+
+      body {
+          margin:0;
+          padding:50;
+          font-family: sans-serif;
+      }
+
+      .dropOffC {
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          width: 400px;
+          padding: 40px;
+          transform: translate(-50%, -50%);
+          background: beige;
+          box-sizing: border-box;
+          box-shadow: 0 15px 25px rgba(0,0,0,.6);
+          border-radius: 10px;
+      }
+
+      .dropOffC h2 {
+          margin: 0 0 30px;
+          padding: 0;
+          color:#5b3c19;
+          text-align: center;
+      }
+      
+      .dropOffC .fieldC {
+          position: relative;
+      }
+
+      .dropOffC .fieldC input {
+          width: 100%;
+          padding: 10px 0;
+          font-size: 16px;
+          color: #7e5423;
+          margin-bottom: 30px;
+          border: none;
+          border-bottom: 1px solid #7e5423;
+          outline: none;
+          background: transparent;
+          font-family: sans-serif;
+          color-scheme: #7e5423;
+      }
+
+      .dropOffC .fieldC select {
+          width: 100%;
+          padding: 10px 0;
+          font-size: 16px;
+          color: #7e5423;
+          margin-bottom: 30px;
+          border: none;
+          border-bottom: 1px solid #7e5423;
+          outline: none;
+          background: transparent;
+      }
+
+      .dropOffC .fieldC option {
+          width: 100%;
+          padding: 10px 0;
+          font-size: 16px;
+          color: #7e5423;
+          margin-bottom: 30px;
+          border: none;
+          border-bottom: 1px solid #7e5423;
+          outline: none;
+          background: transparent;
+      }
+
+      .dropOffC form a {
+          position: relative;
+
+          display: inline-block;
+          padding: 10px 20px;
+          color: #9F8C76;
+          font-size: 16px;
+          text-decoration: none;
+          text-transform: uppercase;
+          overflow: hidden;
+          transition: .5s;
+          margin-top: 40px;
+          letter-spacing: 4px;
+          border-radius: 5px;
+          box-shadow: 0 0 5px #9F8C76,
+                      0 0 25px #9F8C76,
+                      0 0 50px #9F8C76,
+                      0 0 100px #9F8C76;
+      }
+
+      .dropOffC a:hover {
+          background: #9F8C76;
+          color: #fff;
+      }
+
+      .divider{
+        width:90px;
+        height:auto;
+        display:inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation-->
+    <div style='font-family: "Raleway", sans-serif;' class="top bar white padding card wide">
+      <a href="index.html" class="bar-item button">AZoom Car Rental</a>
+      <div class="right">
+        <a href="index.html" class="bar-item button">Home</a>
+        <a href="bookingDetails.html" class="bar-item button">My Bookings</a>
+        <a href="dmgPayment.html" class="bar-item button">Bill Payment</a>
+        <a href="loginSignUp.html" class="bar-item button">Log Out</a>
+      </div>
+    </div>
+  
+    <div class="dropOffC">
+      <h2>Drop Off</h2>
+      <form>
+        <div class="fieldC">
+            <select id="country" name="country">
+                <option>Drop Off</option>
+                <option value="l1">Changi Airport T3</option>
+                <option value="l2">Millenia Walk</option>
+            </select>
+        </div>
+        <div class="fieldC">
+          <input type="date" required>
+        </div>
+        <div class = "parent_div">
+          <a href="pickup.html">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Back
+          </a>
+          <div class="divider"></div>
+          <a href="driverDetails.html">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Next
+          </a>
+        </div>
+          
+
+      </form>
+    </div>
+    
+    <script>
+
+    </script>
+  </body>
+</html> 

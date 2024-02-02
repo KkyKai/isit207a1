@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Staff Home</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        nav {
+          padding:80px;
+          text-align:center;
+
+        }
+          
+        .btn{
+          color:#999;
+          background:rgba(0, 0, 0, 0.5);
+          padding:10px 20px;
+          font-size:12px;
+          text-decoration:none;
+          letter-spacing:2px;
+          text-transform:uppercase;
+        }
+          
+        .btn:hover{
+          border:none;
+          background:#fff;
+          padding:20px 20px;
+          color:#1b1b1b;
+        }
+        
+        html, body {
+          height: 100%;
+        }
+        
+        body {
+          margin: 0;
+          background: linear-gradient(45deg, #a9957b, #9F8C76);
+          font-family: sans-serif;
+          font-weight: 100;
+        }
+        .cMain {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        table {
+          width: 1200px;
+          border-collapse: collapse;
+          overflow: hidden;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+          padding: 15px;
+          background-color: rgba(255, 255, 255, 0.2);
+          color: #fff;
+        }
+        th {
+          text-align: left;
+        }
+        thead th {
+          background-color: #6d6151;
+        }
+        tbody tr:hover {
+          background-color: rgba(255, 255, 255, 0.3);
+        }
+        tbody td {
+          position: relative;
+        }
+        tbody td:hover:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -9999px;
+          bottom: -9999px;
+          background-color: rgba(255, 255, 255, 0.2);
+          z-index: -1;
+        }
+
+        .buttonMain {
+          width: 80px;
+          height: 50px;
+          background: #f3f0f1;
+          position:relative;
+          background: #f3f0f1;
+          margin-bottom: 1px;
+          border-radius: 10px;
+          text-align: center;
+          cursor: pointer;
+          transition: all 0.1s ease-in-out;
+        }
+        .buttonMain span {
+          line-height: 50px;
+          font-family: "Montserrat", sans-serif;
+          font-size: 13px;
+          font-weight: semibold;
+        }
+        .buttonMain:nth-child(1) {
+          box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+          color: #6f6cde;
+        }
+        .buttonMain:nth-child(1):hover {
+          opacity: 0.3;
+          box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+        }
+        .buttonMain:nth-child(1):active {
+          opacity: 1;
+          box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+          color: #79e3b6;
+        }
+
+        button {
+          outline:none;
+          border-color: transparent;
+        }
+
+        .extra {
+          width: 100%;
+          padding: 10px 0;
+          font-size: 16px;
+          color: #fff;
+          margin-bottom: 30px;
+          border: none;
+          border-bottom: 1px solid #fff;
+          outline: none;
+          background: transparent;
+          font-family: sans-serif;
+        }
+
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgba(255, 255, 255, 0.5);
+        opacity: 1; /* Firefox */
+        }
+  
+    </style>
+  </head>
+  <body>
+<!-- Navigation-->
+<div style='font-family: "Raleway", sans-serif;' class="top bar white padding card wide">
+    <a href="index.html" class="bar-item button">AZoom Car Rental</a>
+    <div class="right">
+    <a href="staffMain.html" class="bar-item button">Home</a>
+    <a href="staffArchive.html" class="bar-item button">Archive</a>
+    <a href="loginSignUp.html" class="bar-item button">Log Out</a>
+    </div>
+  </div>
+
+    <nav>
+    	<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+      <a href="staffMain.html" class="btn">1</a>
+      <a href="staffTable2.html" class="btn">2</a>
+      <a href="staffTable3.html" class="btn">3</a>
+      <a href="staffTable4.html" class="btn">4</a>
+    </nav>
+
+    <div class="cMain">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Car</th>
+                    <th>Reference No.</th>
+                    <th>Damage Details</th>
+                    <th>Extra Payment</th>
+                    <th>Send Bill</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Anderson Tay</td>
+                    <td>Tesla Model 3</td>
+                    <td>3125-589016</td>
+                    <td><input id="fileInput" type="file"/></td>
+                    <td><input class="extra" type="text" placeholder="$0" /></td>
+                    <td><button class="buttonMain" id = "button1" onclick="button1();"><span>Send</span></button></td>
+                </tr>
+                <tr>
+                    <td>Wilson Lee</td>
+                    <td>Tesla Model X</td>
+                    <td>3235-568347</td>
+                    <td><input id="fileInput" type="file"/></td>
+                    <td><input class="extra" type="text" placeholder="$0" /></td>
+                    <td><button class="buttonMain" id = "button2" onclick="button2();"><span>Send</span></button></td>
+                </tr>
+                <tr>
+                  <td>Sean Tan</td>
+                  <td>Tesla Model S</td>
+                  <td>3125-568098</td>
+                  <td><input id="fileInput" type="file"/></td>
+                  <td><input class="extra" type="text" placeholder="$0" /></td>
+                  <td><button class="buttonMain" id = "button3" onclick="button3();"><span>Send</span></button></td>
+                </tr>
+                <tr>
+                  <td>Lance</td>
+                  <td>Tesla Model S</td>
+                  <td>3125-563456</td>
+                  <td><input id="fileInput" type="file"/></td>
+                  <td><input class="extra" type="text" placeholder="$0" /></td>
+                  <td><button class="buttonMain" id = "button4" onclick="button4();"><span>Send</span></button></td>
+                </tr>
+                <tr>
+                  <td>Alendra</td>
+                  <td>Tesla Model X</td>
+                  <td>3125-568783</td>
+                  <td><input id="fileInput" type="file"/></td>
+                  <td><input class="extra" type="text" placeholder="$0" /></td>
+                  <td><button class="buttonMain" id = "button5" onclick="button5();"><span>Send</span></button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+  <script>
+    function button1 () {
+      document.getElementById ("button1").disabled = true;
+      document.getElementById ("button1").innerHTML = "Sent";
+      document.getElementById ("button1").style.color = "red";
+
+      console.log (button1);
+    }
+
+    function button2 () {
+      document.getElementById ("button2").disabled = true;
+      document.getElementById ("button2").innerHTML = "Sent";
+      document.getElementById ("button2").style.color = "red";
+
+      console.log (button2);
+    }
+
+    function button3 () {
+      document.getElementById ("button3").disabled = true;
+      document.getElementById ("button3").innerHTML = "Sent";
+      document.getElementById ("button3").style.color = "red";
+
+      console.log (button3);
+    }
+
+    function button4 () {
+      document.getElementById ("button4").disabled = true;
+      document.getElementById ("button4").innerHTML = "Sent";
+      document.getElementById ("button4").style.color = "red";
+
+      console.log (button4);
+    }
+
+    function button5 () {
+      document.getElementById ("button5").disabled = true;
+      document.getElementById ("button5").innerHTML = "Sent";
+      document.getElementById ("button5").style.color = "red";
+
+      console.log (button5);
+    }
+  </script>
+</body>
+</html> 

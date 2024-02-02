@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AZoom</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+      body,h1,h2,h3,h4,h5,h6 {
+        font-family: "Raleway", sans-serif;
+      }
+
+      body, html {
+        height: 100%;
+        line-height: 1.8;
+      }
+
+      .backImg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("tesla.jpg");
+        min-height: 100%;
+      }
+
+      .bar .button {
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Navigation-->
+    <div class="top bar white padding card wide">
+      <a href="index.html" class="bar-item button">AZoom Car Rental</a>
+      <div class="right">
+        <a href="index.html" class="bar-item button">Home</a>
+        <a href="loginSignUp.html" class="bar-item button">Book</a>
+        <a href="loginSignUp.html" class="bar-item button">Log In</a>
+      </div>
+    </div>
+
+    <header class="backImg display-container" id="home">
+      <div class="display-left text-white" style="padding:48px">
+        <span class="huge">Relieves Gas Pains</span><br>
+        <br>
+        <span class="xlarge">Travel hassle-free</span>
+        <p><a href="loginSignUp.html" class="button white padding-large large margin-top opacity hover-opacity-off">Book Now</a></p>
+      </div> 
+    </header>
+
+    <div id="about" class="padding-top-64">
+      <div class="row">
+      
+        <div class="half padding-large">
+        <img src="tesla2.jpg" class="round image" alt="Tesla Model X" style="width:100%">
+        </div>
+      
+        <div class="half padding-large">
+          <h1 class="center">About Us</h1><br>
+          <h5 class="center">Since 2018</h5>
+          <p class="large justify">
+          Our guiding principles, and humble beginning, revolve around personal honesty and integrity. Partnered exclusively with Tesla, We're building a world powered by solar energy, running on batteries and transported by electric vehicles.
+          We only offer the best electric cars, and take an active role in sustainability, not only because it's smart for our business, but because we believe in making the world a better place for future generations.
+        </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container center dark-grey" style="padding:128px 16px" id="pricing">
+        <h3>PRICING</h3>
+        <p class="large">Choose a Car that fits your needs.</p>
+        <div class="row-padding" style="margin-top:64px">
+          <div class="third section">
+            <ul class="ul white">
+              <li class="black xlarge padding-32">Tesla Model 3</li>
+              <li class="padding-16"><b>491 Km</b> Range (WLTP)</li>
+              <li class="padding-16"><b>5 Adults</b> Seating</li>
+              <li class="padding-16"><b>649 Liters</b> Cargo Space</li>
+              <li class="padding-16"><b>Endless</b> Support</li>
+              <li class="padding-16">
+                <h2 class="wide">$ 70</h2>
+                <span class="opacity">per day</span>
+              </li>
+              <li class="light-grey padding-24">
+                <button class="button black padding-large" onclick="toLogin ();">Book Now</button>
+              </li>
+            </ul>
+          </div>
+          <div class="third section">
+            <ul class="ul white">
+              <li class="black xlarge padding-32">Tesla Model S</li>
+              <li class="padding-16"><b>652 Km</b> Range (WLTP)</li>
+              <li class="padding-16"><b>5 Adults</b> Seating</li>
+              <li class="padding-16"><b>793 Liters</b> Cargo Space</li>
+              <li class="padding-16"><b>Endless</b> Support</li>
+              <li class="padding-16">
+                <h2 class="wide">$ 90</h2>
+                <span class="opacity">per day</span>
+              </li>
+              <li class="light-grey padding-24">
+                <button class="button black padding-large" onclick="toLogin ();">Book Now</button>
+              </li>
+            </ul>
+          </div>
+          <div class="third section">
+            <ul class="ul white">
+              <li class="black xlarge padding-32">Tesla Model X</li>
+              <li class="padding-16"><b>560 Km</b> Range (WLTP)</li>
+              <li class="padding-16"><b>6 Adults</b> Seating</li>
+              <li class="padding-16"><b>2,614 Liters</b> Cargo Space</li>
+              <li class="padding-16"><b>Endless</b> Support</li>
+              <li class="padding-16">
+                <h2 class="wide">$ 80</h2>
+                <span class="opacity">per day</span>
+              </li>
+              <li class="light-grey padding-24">
+                <button class="button black padding-large" onclick="toLogin ();">Book Now</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    <!--Store locations -->
+    <div id="location" class="padding-top-64">
+        <h1 class="center">Our Locations</h1>
+        <div class="row">
+          <div class="col l6 m6 padding-large">
+            <h4>Changi Airport Terminal 3</h4>
+            <p class="text-grey">
+            Changi Airport Terminal 3, 65, Airport Boulevard, Singapore 819663</p><br>
+          </div>
+          
+          <div class="col l6 m6 padding-large">
+          <img src="changit3.jpg" class="round image" alt="Changi Airport T3" style="width:100%">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col l6 m6 padding-large">
+            <h4>Millenia Walk</h4>
+            <p class="text-grey">
+            9 Raffles Blvd, #01-84, Singapore 039596</p><br>
+          </div>
+          
+          <div class="col l6 m6 padding-large">
+            <img src="mwalk.jpg" class="round image" alt="Millenia Walk Branch" style="width:100%">
+          </div>
+        </div>
+
+        <div class="container text-grey">
+          <p>We offer our services at any time. We understand your needs. Do not hesitate to contact us.</p>
+        </div>
+      </div>
+
+      <div class="container light-grey padding-32 padding-large" id="contact">
+        <div class="content" style="max-width:600px">
+          <h4 class="center"><b>Contact Us</b></h4>
+          <p>Have any Inquires? Fill out the form and fill us in with the details.</p>
+          <form>
+            <div class="section">
+              <label>Name</label>
+              <input class="input border" type="text" name="Name" required>
+            </div>
+            <div class="section">
+              <label>Email</label>
+              <input class="input border" type="text" name="Email" required>
+            </div>
+            <div class="section">
+              <label>Message</label>
+              <input class="input border" type="text" name="Message" required>
+            </div>
+            <button type="button" onclick="alerta ();" class="button block black margin-bottom">Send Message</button>
+          </form>
+        </div>
+      </div>
+    
+    <script>
+      function alerta () {
+        alert ("Thanks for sending us a message! We will get back to you soon");
+      }
+
+      function toLogin () {
+        window.open ("loginSignUp.html", "_self");
+      }
+    </script>
+
+  </body>
+</html>

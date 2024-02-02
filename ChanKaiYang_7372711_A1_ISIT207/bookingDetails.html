@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>Booking Details</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+
+		<style>  
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1.5;
+        min-height: 100vh;
+        padding: 5rem 0;
+        font-size: clamp(1rem, 2.5vw, 1.1rem);
+      }
+
+      section {
+        width: 90%;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      section + section {
+        margin-top: 2.5em;
+      }
+
+      h1 {
+        font-weight: 700;
+        line-height: 1.125;
+        font-size: clamp(1rem, 2.5vw, 2rem);
+      }
+
+      h2 {
+        margin-top: 0.25em;
+        color: #999;
+        font-size: clamp(1rem, 2.4vw, 1.1rem);
+      }
+
+      h2 + * {
+        margin-top: 1.5em;
+      }
+
+      summary {
+        background-color: white;
+        position: relative;
+        cursor: pointer;
+        padding: 1em 0.5em;
+        list-style: none;
+      }
+
+      summary:hover {
+        background-color: rgba(255, 236, 203, 0.1);
+      }
+
+      summary div {
+        display: flex;
+        align-items: center;
+      }
+
+      summary h3 {
+        display: flex;
+        flex-direction: column;
+      }
+
+      summary small {
+        color: #999;
+        font-size: 0.85em;
+      }
+
+      summary span:last-child {
+        font-weight: 700;
+        margin-left: auto;
+      }
+
+      details {
+        border-bottom: 1px solid #747c92;
+      }
+
+      details:first-of-type {
+        border-top: 1px solid #747c92;
+      }
+
+      .second {
+        border-top: 1px solid #747c92;
+      }
+
+      details > div {
+        padding: 2em 2em 0;
+        font-size: 0.875em;
+      }
+
+      dl {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      dl dt {
+        font-weight: 700;
+      }
+
+      dl div {
+        margin-right: 4em;
+        margin-bottom: 3em;
+      }
+
+      .divider{
+        height:100px;
+        width:auto;
+        display:inline-block;
+      }
+
+    </style>
+  </head>
+
+	<body>
+    <!-- Navigation-->
+    <div style='font-family: "Raleway", sans-serif;' class="top bar white padding card wide">
+      <a href="index.html" class="bar-item button">AZoom Car Rental</a>
+      <div class="right">
+        <a href="index.html" class="bar-item button">Home</a>
+        <a href="bookingDetails.html" class="bar-item button">My Bookings</a>
+        <a href="dmgPayment.html" class="bar-item button">Bill Payment</a>
+        <a href="loginSignUp.html" class="bar-item button">Log Out</a>
+      </div>
+    </div>
+
+    <section>
+      <h1>Booking Details</h1>
+      <h2>Today</h2>
+      <details>
+        <summary>
+          <div>
+            <h3>
+              <strong>Tesla</strong>
+              <small>Model 3</small>
+            </h3>
+            <span>-898.80 SGD</span>
+          </div>
+        </summary>
+        <div>
+          <dl>
+            <div>
+              <dt>Pick Up</dt>
+              <dd>Changi Airport T3</dd>
+              <dd>28/10/2022</dd>
+            </div>
+
+            <div>
+              <dt>Reference ID</dt>
+              <dd>3125-568911</dd>
+            </div>
+
+            <div>
+              <dt>Card used</dt>
+              <dd>•••• 1234</dd>
+            </div>
+
+            <div>
+              <dt>Drop Off</dt>
+              <dd>Millenia Walk</dd>
+              <dd>08/11/2022</dd>
+            </div>
+          </dl>
+        </div>
+      </details>
+
+      
+
+      <div class="divider"></div>
+      <h2>Past Transactions</h2>
+      <details class="second">
+        <summary>
+          <div>
+            <h3>
+              <strong>Tesla</strong>
+              <small>Model S</small>
+            </h3>
+            <span>-481.50 SGD</span>
+          </div>
+        </summary>
+        <div>
+          <dl>
+            <div>
+              <dt>Pick Up</dt>
+              <dd>Millenia Walk</dd>
+              <dd>16/10/2021</dd>
+            </div>
+
+            <div>
+              <dt>Reference ID</dt>
+              <dd>2125-568461</dd>
+            </div>
+
+            <div>
+              <dt>Card used</dt>
+              <dd>•••• 1234</dd>
+            </div>
+
+            <div>
+              <dt>Drop Off</dt>
+              <dd>Changi Airport T3</dd>
+              <dd>20/10/2021</dd>
+            </div>
+          </dl>
+        </div>
+      </details>
+    </section>
+
+		<script>
+
+		</script>
+
+	</body>
+
+</html> 

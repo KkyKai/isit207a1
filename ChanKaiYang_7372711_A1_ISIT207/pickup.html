@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pickup Location</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+      html {
+          height: 100%;
+      }
+
+      body {
+          margin:0;
+          padding:50;
+          font-family: sans-serif;
+      }
+
+      .pckUp {
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          width: 400px;
+          padding: 40px;
+          transform: translate(-50%, -50%);
+          background: beige;
+          box-sizing: border-box;
+          box-shadow: 0 15px 25px rgba(0,0,0,.6);
+          border-radius: 10px;
+      }
+
+      .pckUp h2 {
+          margin: 0 0 30px;
+          padding: 0;
+          color:#5b3c19;
+          text-align: center;
+      }
+      
+      .pckUp .innerpckUp {
+          position: relative;
+      }
+
+      .pckUp .innerpckUp input {
+          width: 100%;
+          padding: 10px 0;
+          font-size: 16px;
+          color: #7e5423;
+          margin-bottom: 30px;
+          border: none;
+          border-bottom: 1px solid #7e5423;
+          outline: none;
+          background: transparent;
+          font-family: sans-serif;
+          color-scheme: #7e5423;
+      }
+
+      .pckUp .innerpckUp select {
+          width: 100%;
+          padding: 10px 0;
+          font-size: 16px;
+          color: #7e5423;
+          margin-bottom: 30px;
+          border: none;
+          border-bottom: 1px solid #7e5423;
+          outline: none;
+          background: transparent;
+      }
+
+      .pckUp .innerpckUp option {
+          width: 100%;
+          padding: 10px 0;
+          font-size: 16px;
+          color: #7e5423;
+          margin-bottom: 30px;
+          border: none;
+          border-bottom: 1px solid #7e5423;
+          outline: none;
+          background: transparent;
+      }
+
+      .pckUp form a {
+          position: relative;
+          display: inline-block;
+          left: 93%;
+          transform: translateX(-100%);
+          padding: 10px 20px;
+          color: #9F8C76;
+          font-size: 16px;
+          text-decoration: none;
+          text-transform: uppercase;
+          overflow: hidden;
+          transition: .5s;
+          margin-top: 40px;
+          letter-spacing: 4px;
+          border-radius: 5px;
+          box-shadow: 0 0 5px #9F8C76,
+                      0 0 25px #9F8C76,
+                      0 0 50px #9F8C76,
+                      0 0 100px #9F8C76;
+      }
+
+      .pckUp a:hover {
+          background: #9F8C76;
+          color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation-->
+    <div style='font-family: "Raleway", sans-serif;' class="top bar white padding card wide">
+      <a href="index.html" class="bar-item button">AZoom Car Rental</a>
+      <div class="right">
+        <a href="index.html" class="bar-item button">Home</a>
+        <a href="bookingDetails.html" class="bar-item button">My Bookings</a>
+        <a href="dmgPayment.html" class="bar-item button">Bill Payment</a>
+        <a href="loginSignUp.html" class="bar-item button">Log Out</a>
+      </div>
+    </div>
+  
+    <div class="pckUp">
+      <h2>Pick up</h2>
+      <form>
+        <div class="innerpckUp">
+            <select id="country" name="country">
+                <option>Pick Up</option>
+                <option value="l1">Changi Airport T3</option>
+                <option value="l2">Millenia Walk</option>
+            </select>
+        </div>
+        <div class="innerpckUp">
+          <input type="date" required>
+        </div>
+        <a href="dropoff.html">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Next
+        </a>
+      </form>
+    </div>
+    
+    <script>
+
+    </script>
+  </body>
+</html> 

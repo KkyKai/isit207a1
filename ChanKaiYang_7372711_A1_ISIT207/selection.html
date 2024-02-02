@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Car Selection</title>
+		<link rel="stylesheet" href="nav.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<style>
+			/* Body & Image List Styles
+			-------------------------------------------------------------- */
+			body {
+				background: #f6f5f7;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				height: 100vh;
+				margin: -20px 0 50px;
+			}
+			
+			ul {
+					padding: 2.5%;
+						
+				}
+
+			.imageList {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			.imageList li {
+				border: 0px solid transparent;
+				box-sizing: border-box;
+				width: 33.33%;
+				float: left;
+				position: relative;
+				cursor: pointer;
+			}
+
+			.imageList img {
+				max-width: 100%;
+				vertical-align: middle;
+			}
+
+			.img-placeholder:before,
+			.img-placeholder:after {
+				padding-top: 33.33%;
+				content: "";
+				display: block;
+			}
+
+			.img-placeholder {
+				background: #222;
+				box-shadow: 0 0 0 8px #222 inset, 0 0 0 9px #333 inset;
+				color: #444;
+				line-height: 0;
+				text-align: center;
+				display: block;
+			}
+
+			.imageList li:before {
+				transition: all .5s ease;
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: #333;
+				transform: scale(0);
+			}
+
+			.imageList li:hover:before {
+				opacity: .5;
+				transform: scale(1);
+			}
+
+			.imageList li:after {
+				transition: all .6s ease .2s;
+				content: "";
+				position: absolute;
+				top: 8px;
+				left: 8px;
+				right: 8px;
+				bottom: 8px;
+				border: 1px solid #aaa;
+				background: #000;
+				opacity: 0;
+				transform: scale(0);
+			}
+
+			.imageList li:hover:after {
+				opacity: .35;
+				transform: scale(1);
+			}
+    	</style>
+  </head>
+
+	<body>
+    <!-- Navigation-->
+    <div style='font-family: "Raleway", sans-serif;' class="top bar white padding card wide">
+		<a href="index.html" class="bar-item button">AZoom Car Rental</a>
+		<div class="right">
+			<a href="index.html" class="bar-item button">Home</a>
+			<a href="bookingDetails.html" class="bar-item button">My Bookings</a>
+			<a href="dmgPayment.html" class="bar-item button">Bill Payment</a>
+			<a href="loginSignUp.html" class="bar-item button">Log Out</a>
+		</div>
+	</div>
+
+		<ul class="imageList">
+			<a href="pickup.html"><li><img src="model3.jpg" alt="model3"></li></a>
+			<a href="pickup.html"><li><img src="models.jpg" alt="models"></li></a>
+			<a href="pickup.html"><li><img src="modelx.jpg" alt="modelx"></li></a>
+		</ul>
+
+		<script>
+
+		</script>
+
+	</body>
+
+</html> 
